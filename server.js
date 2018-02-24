@@ -28,21 +28,20 @@ const waitingList = [
 	}
 ];
 
-
 app.listen(PORT, function() {
 	console.log("App listening on Port " + PORT);
 });
 
 	app.get("/", function(req, res) {
-		res.sendFile(path.join(__dirname, "index.html"))
+		res.sendFile(path.join(__dirname, "/index.html"))
+		app.use(express.static("../public"))
 	});
-
 	app.get("/reservation", function(req, res) {
-		res.sendFile(path.join(__dirname, "reservationPage.html"))
+		res.sendFile(path.join(__dirname, "/reservationPage.html"))
 	});
 
 	app.get("/tables", function(req, res) {
-		res.sendFile(path.join(__dirname, "table.html"))
+		res.sendFile(path.join(__dirname, "/table.html"))
 	})
 
 	app.post("/api/new", function(req, res) {
