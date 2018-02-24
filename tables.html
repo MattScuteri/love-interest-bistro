@@ -58,7 +58,7 @@
 	function viewTablesQuery(){ //view the tables that have a valid reservation
 		var rootPage = window.location.origin;
 
-		$.ajax({url: currentURL + "", method: "GET"}) //add url of our api
+		$.ajax({url: currentURL + "/api/tables", method: "GET"}) //add url of our api
 			.done(function(reservationData) {
 
 				for (var i=0; i<tableData.length; i++){
@@ -78,7 +78,7 @@
 	function waitlistQuery(){
 		var currentURL = window.location.origin;
 
-		$.ajax({url: currentURL + "", method: "GET"})
+		$.ajax({url: currentURL + "/api/waitlist", method: "GET"})
 			.done(function(waitlistData) {
 	
 			for (var i=0; i<waitlistData.length; i++){
