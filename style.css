@@ -1,33 +1,42 @@
-body {
-	background-color: #DEF6E8;
+
+#logo {
+	padding-left: 400px;
+	padding-top: 30%;
+    padding-bottom: 30%;
 }
 
 .title {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 55px;
 	padding-left: 35px;
+	color: white;
 }
 
  #title-2 {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 95px;
 	padding-left: 95px;
+	color: white;
+}
+mark.red{
+	color: #b30000;
+	background-color: black;
 }
 
-h3 {
+#h3 {
 	padding-left: 80px;
-	
-
+	color: white;
 }
+
 #tables {
-	background-color: #6A377B;
+	background-color: #cc0000;
 	border: none;
 
 }
 
 #reserve-btn {
 	float: right;
-	background-color: #5C9FF2;
+	background-color: #cc0000;
 	border: none;
 }
 
@@ -38,7 +47,7 @@ h3 {
 }
 
 #jumbotron-main {
-	background-color: #E1FAF8;
+	background-color: black;
 }
 
 
