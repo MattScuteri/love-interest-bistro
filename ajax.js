@@ -7,15 +7,15 @@ const PORT = 3000;
 
 module.exports = function(ajax) {
 	app.get("/", function(req, res) {
-		res.sendFile(path.join(__dirname, "home.html"))
+		res.sendFile(path.join(__dirname, "index.html"))
 	});
 
 	app.get("/reservation", function(req, res) {
-		res.sendFile(path.join(__dirname, "reserve.html"))
+		res.sendFile(path.join(__dirname, "reservationPage.html"))
 	});
 
 	app.get("/tables", function(req, res) {
-		res.sendFile(path.join(__dirname, "tables.html"))
+		res.sendFile(path.join(__dirname, "table.html"))
 	})
 
 	app.post("/api/new", function(req, res) {
