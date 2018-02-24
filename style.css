@@ -1,0 +1,44 @@
+body {
+	background-color: #DEF6E8;
+}
+
+.title {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 55px;
+	padding-left: 35px;
+}
+
+ #title-2 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 95px;
+	padding-left: 95px;
+}
+
+h3 {
+	padding-left: 80px;
+	
+
+}
+#tables {
+	background-color: #6A377B;
+	border: none;
+
+}
+
+#reserve-btn {
+	float: right;
+	background-color: #5C9FF2;
+	border: none;
+}
+
+#bistro {
+	height: 600px;
+	width: 900px;
+	padding-left: 150px;
+}
+
+#jumbotron-main {
+	background-color: #E1FAF8;
+}
+
+
