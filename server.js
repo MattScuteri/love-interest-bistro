@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
+const ajax = require('./ajax.js');
 
 const app = express();
 const PORT = 3000;
@@ -18,3 +19,7 @@ const reservation = [
 
   }
 ];
+
+app.listen(PORT, function() {
+	console.log("App listening on Port " + PORT);
+});
