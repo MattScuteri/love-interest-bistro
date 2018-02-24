@@ -2,7 +2,6 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const path = require("path");
 
-
 const app = express();
 const PORT = 3000;
 
@@ -28,6 +27,8 @@ const waitingList = [
 		uniqueId: ""
 	}
 ];
+
+require("./ajax.js")("ajax");
 
 app.listen(PORT, function() {
 	console.log("App listening on Port " + PORT);

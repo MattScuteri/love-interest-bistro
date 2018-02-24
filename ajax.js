@@ -5,7 +5,7 @@ const path = require("path");
 const app = express();
 const PORT = 3000;
 
-module.exports: function(ajax) {
+module.exports = function(ajax) {
 	app.get("/", function(req, res) {
 		res.sendFile(path.join(__dirname, "home.html"))
 	});
@@ -29,7 +29,7 @@ module.exports: function(ajax) {
 			reservation.push(newReservation);
 
 			res.json(newReservation);
-		} else (reservation.length > 5) {
+		} else {
 			waitingList.push(newReservation);
 
 			res.json(newReservation);
