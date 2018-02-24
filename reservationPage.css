@@ -1,0 +1,33 @@
+.jumbotron,  .row{
+	margin:0 auto;
+	width:80%;
+	height:30%;
+	margin-bottom:5%;
+
+	font-weight: bold;
+	font-family:'Kaushan Script', cursive;
+}
+hr{
+	border:1px white solid;
+}
+ .row{
+ 	border:2px solid gray;
+ 	border-radius:10px 10px 10px 10px;
+ 	padding:10px;
+ }
+
+.jumbotron{
+	background-image:url("images/restaurant.jpg");
+	background-repeat: no-repeat;
+	background-size:cover;
+	opacity:0.8;
+	color:white;
+	font-size: 55px;
+}
+#homeBtn{
+	margin-left:50%;
+}
+.display-3{
+	
+	text-align:center;
+}
