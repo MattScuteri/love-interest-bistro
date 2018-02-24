@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/MattScuteri/love-interest-bistro/issues"
   },
-  "homepage": "https://github.com/MattScuteri/love-interest-bistro#readme"
+  "homepage": "https://github.com/MattScuteri/love-interest-bistro#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "path": "^0.12.7"
+  }
 }
