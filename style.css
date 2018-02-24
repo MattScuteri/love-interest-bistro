@@ -50,4 +50,30 @@ mark.red{
 	background-color: black;
 }
 
+#matt {
+	
+	border: solid;
+	border-color: #cc0000;
+	position: center;
+	margin-left: 100px;
+}
 
+#matt-contain {
+	width: 2000px;
+}
+
+#about-tag {
+	font-size: 60px;
+	color: #cc0000;
+	font-family: 'Playfair Display SC', serif;
+}
+
+#about-jumbo {
+	background-color: black;
+	width: 100%;
+	height: 100%;
+}
+
+#matt-btn {
+	background-color: #cc0000;
+}
