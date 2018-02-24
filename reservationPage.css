@@ -26,7 +26,13 @@ hr{
 }
 #homeBtn{
 	margin-left:50%;
+	background-color:#cc0000;
 }
+#clearBtn, #submit{
+	background-color:#cc0000;
+	font-family:'Kaushan Script', cursive;
+}
+
 .display-3{
 	
 	text-align:center;
