@@ -25,8 +25,14 @@ module.exports: function(ajax) {
 
 		console.log(newReservation);
 
-		reservation.push(newReservation);
+		if(reservation.length <= 5) {
+			reservation.push(newReservation);
 
-		res.json(newReservation);
+			res.json(newReservation);
+		} else (reservation.length > 5) {
+			waitingList.push(newReservation);
+
+			res.json(newReservation);
+		};
 	})
 }

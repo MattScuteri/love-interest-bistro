@@ -14,10 +14,19 @@ const reservation = [
 
 	name: "Ana",
 	phone: "203-345-1232",
-	email: "love@interest.com"
+	email: "love@interest.com",
 	uniqueId: "123-321"
 
   }
+];
+
+const waitingList = [
+	{
+		name: "",
+		phone: "",
+		email: "",
+		uniqueId: ""
+	}
 ];
 
 app.listen(PORT, function() {
