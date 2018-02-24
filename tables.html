@@ -58,13 +58,13 @@
 		var rootPage = window.location.origin;
 
 		$.ajax({url: currentURL + "", method: "GET"}) //add url of our api
-			.done(function(tableData) {
+			.done(function(reservationData) {
 
 				for (var i=0; i<tableData.length; i++){
 
 					var tableList = $("<div>"); //creates table section and adds reservation info
 					tableList.addClass('card');
-					tableList.attr('id', 'tablecard-' + i+1)
+					tableList.attr('id', 'tableCard-' + i+1)
 					$('#tableList').append(tableList);
 
 					var tableNumber = i + 1;
@@ -74,4 +74,23 @@
 
 	}
 
+	function waitlistQuery(){
+		var currentURL = window.location.origin;
+
+		$.ajax({url: currentURL + "", method: "GET"})
+			.done(function(waitlistData) {
+	
+			for (var i=0; i<waitlistData.length; i++){
+
+					
+					var waitlistSection = $("<div>");
+					waitlistSection.addClass('card');
+					waitlistSection.attr('id', 'waitlistCard-' + i+1)
+					$('#waitlistSection').append(waitlistSection);
+
+					var tableNumber = i + 1;
+
+					
+					$("#waitlistWell-"+ i+1).append('<h2><span class="label label-primary">' + tableNumber + "</span> | " + waitlistData[i].customerID + "</h2>");
+				}
 </html>
